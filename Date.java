@@ -18,66 +18,57 @@ public class Date{
 	}
 	public void setYear( int year){
 		if(year < 1000 ||  year > 9999) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-      }
+         	// error!
+         	throw new IllegalArgumentException("Out of bounds!");
+      		}
 		this.year = year;
 	}
-
 	public int getMonth(){
 		return month;
 	}
 	public void setMonth( int month){
 		if(month < 1 || month > 12) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-     	}
-      	if(month == 2 && day > 29) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-      	}
-      	if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 && day == 30) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-      	}
+         	// error!
+        	throw new IllegalArgumentException("Out of bounds!");
+     		}
+      		if(month == 2 && day > 29) {
+         	// error!
+         	throw new IllegalArgumentException("Out of bounds!");
+      		}
+      		if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 && day == 30) {
+         	// error!
+         	throw new IllegalArgumentException("Out of bounds!");
+      		}
    		this.month = month;
 	}
-
 	public int getDay(){
 		return day;
 	}
 	public void setDay( int day){
 		if(day < 1 || day > 31) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-      }
-      if ( (isLeapYear(year)) &&  (day > 29)) {
-         // error!
-         throw new IllegalArgumentException("Out of bounds!");
-      }
-
-
+         	// error!
+         	throw new IllegalArgumentException("Out of bounds!");
+      		}
+      		if ( (isLeapYear(year)) &&  (day > 29)) {
+         	// error!
+         	throw new IllegalArgumentException("Out of bounds!");
+      		}
 		this.day = day;
 	}
 
-public static boolean isLeapYear(int year) {
-   
-	if (year % 4 == 0) {
-  	return true;
- 	}
-
-    if (year % 400 == 0) {
-        return true;
-    }
-
-    if (year % 100 == 0) {
-        return false;
-    }
-    return true;
-}
-
-
-
+	public static boolean isLeapYear(int year) {
+   		if (year % 4 == 0) {
+  			return true;
+ 		}
+		if (year % 400 == 0) {
+        		return true;
+    		}
+		if (year % 100 == 0) {
+        		return false;
+    		}
+    		return true;
+	}
+	
 	public String toString(){
 		String str = String.format("%02d/%02d/%02d",month,day,year);
 		return str;
