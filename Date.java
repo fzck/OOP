@@ -2,7 +2,6 @@ public class Date{
 	private int month;
 	private int day;
 	private int year;
-
 	public Date (int y, int m, int d){
 		this.year = y;
 		this.month = m;
@@ -55,7 +54,6 @@ public class Date{
       		}
 		this.day = day;
 	}
-
 	public static boolean isLeapYear(int year) {
    		if (year % 4 == 0) {
   			return true;
@@ -68,7 +66,6 @@ public class Date{
     		}
     		return true;
 	}
-	
 	public String toString(){
 		String str = String.format("%02d/%02d/%02d",month,day,year);
 		return str;
