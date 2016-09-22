@@ -3,9 +3,7 @@ public class Date{
 	private int day;
 	private int year;
 	public Date (int y, int m, int d){
-		this.year = y;
-		this.month = m;
-		this.day = d;
+		setDate(y,m,d);
 	}
 	public void setDate (int year, int month, int day){
 		this.year = year;
