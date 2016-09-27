@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Jeremy
+ * @author Jeremy Lapuz, Jerome Requioma, Florence Zauleck
  */
 public class Test_StringStack {
     public static void main(String[] args){
