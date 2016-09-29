@@ -52,7 +52,7 @@ public class Date{
       		}
 		this.day = day;
 	}
-	public static boolean isLeapYear(int year) {
+	private boolean isLeapYear(int year) {
    		if (year % 4 == 0) {
   			return true;
  		}
