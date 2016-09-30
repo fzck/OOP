@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Jeremy
+ * @author CJ Lapuz, J Requioma, F Zauleck
  */
 public class Test_StringQueue {
     public static void main(String[] args){
