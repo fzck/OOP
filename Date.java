@@ -25,16 +25,13 @@ public class Date{
 	}
 	public void setMonth( int month){
 		if(month < 1 || month > 12) {
-         	// error!
-        	throw new IllegalArgumentException("Out of bounds!");
+        		throw new IllegalArgumentException("Out of bounds!");
      		}
       		if(month == 2 && day > 29) {
-         	// error!
-         	throw new IllegalArgumentException("Out of bounds!");
+         		throw new IllegalArgumentException("Out of bounds!");
       		}
       		if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 && day == 30) {
-         	// error!
-         	throw new IllegalArgumentException("Out of bounds!");
+         		throw new IllegalArgumentException("Out of bounds!");
       		}
    		this.month = month;
 	}
@@ -43,12 +40,10 @@ public class Date{
 	}
 	public void setDay( int day){
 		if(day < 1 || day > 31) {
-         	// error!
-         	throw new IllegalArgumentException("Out of bounds!");
+         		throw new IllegalArgumentException("Out of bounds!");
       		}
-      		if ( (isLeapYear(year)) &&  (day > 29)) {
-         	// error!
-         	throw new IllegalArgumentException("Out of bounds!");
+      		if ( (isLeapYear(year)) &&  (day > 29)) {        	
+         		throw new IllegalArgumentException("Out of bounds!");
       		}
 		this.day = day;
 	}
