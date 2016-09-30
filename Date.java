@@ -14,9 +14,8 @@ public class Date{
 		return year;
 	}
 	public void setYear( int year){
-		if(year < 1000 ||  year > 9999) {
-         	// error!
-         	throw new IllegalArgumentException("Out of bounds!");
+		if(year < 1000 ||  year > 9999) {     	
+         		throw new IllegalArgumentException("Out of bounds!");
       		}
 		this.year = year;
 	}
