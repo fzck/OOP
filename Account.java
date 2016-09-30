@@ -16,7 +16,6 @@ public class Account{
 	}
 	public void setBalance(double balance){
 		if(balance < 0.0) {
-         	// error!
          	throw new IllegalArgumentException("Broke af");
       		}
       		this.balance = balance;
@@ -28,7 +27,6 @@ public class Account{
 		if (balance >= amount){
 			setBalance(balance - amount);
 		} else {
-			// error!
          		throw new IllegalArgumentException("amount withdrawn exceeds the curernt balance!");
 		}
 	}
