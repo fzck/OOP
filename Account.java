@@ -16,7 +16,7 @@ public class Account{
 	}
 	public void setBalance(double balance){
 		if(balance < 0.0) {
-         	throw new IllegalArgumentException("Broke af");
+         		throw new IllegalArgumentException("Broke af");
       		}
       		this.balance = balance;
 	}
