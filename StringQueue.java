@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author Jeremy
+ * @author Jeremy Lapuz, Jerome Requioma, Florence Zauleck
  */
 public class StringQueue {
     final static int DEFAULT_SIZE = 10;
