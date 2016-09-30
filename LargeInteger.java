@@ -168,66 +168,7 @@ public class LargeInteger {
         }
         return res1;
     }
-    
-    /** SKELETON OF add
-    public LargeInteger multiply(LargeInteger higher, LargeInteger lower){
-        LargeInteger res1 = new LargeInteger();
-        int i = 1;
-        int value = 0;
-        if (lower.length() > higher.length()){
-            LargeInteger newLow = new LargeInteger(higher.getLargeInt());
-            higher = new LargeInteger(lower.getLargeInt());
-            lower = new LargeInteger(newLow.getLargeInt());
-        }
-        int lenLower = lower.length();
-        int lenHigher = higher.length();
-        for (; i <= lower.length(); i++) {
-            value = lower.charAt(lenLower - i) + higher.charAt(lenHigher - i) - TO_INT;
-            if (value - TO_INT >= RAISED_TO){
-                res1.setCharAt(MAX_DIGITS - i - 1, '1');
-                value -= RAISED_TO;
-            }
-            res1.setCharAt(MAX_DIGITS - i, (char)value);
-        }
-        if (!isEqualLength(lenHigher, lenLower)){
-            i -= 1;
-            for (int j = i; j < lenHigher; j++){
-                value = higher.charAt(lenHigher - j - 1);
-                res1.setCharAt(MAX_DIGITS - j - 1, (char)value);
-            }
-        }
-        return res1;
-    }
-    */
-    
-    /** SKELETEON OF subtract
-    public LargeInteger subtract(LargeInteger higher, LargeInteger lower){
-        LargeInteger res1 = new LargeInteger();
-        int i = 1;
-        int value = 0;
-        int lenLower = lower.length();
-        int lenHigher = higher.length();
-        for (; i <= lenLower; i++) {
-            value = higher.charAt(lenHigher - i)- lower.charAt(lenLower - i);
-            if (value <= DECREASE_BY){
-                res1.setCharAt(MAX_DIGITS - i - 1, '/');
-                value += value;
-            }
-            System.out.println(value);
-            System.out.printf("A%dA", Character.getNumericValue((char)value));
-            res1.setCharAt(MAX_DIGITS - i, (char)value);
-        }
-        if (!isEqualLength(lenHigher, lenLower)){
-            i -= 1;
-            for (int j = i; j < lenHigher; j++){
-                value = higher.charAt(lenHigher - j - 1);
-                res1.setCharAt(MAX_DIGITS - j - 1, (char)value);
-            }
-        }
-        return res1;
-    }
-    */
-    
+   
    
     //Adding a Large Integer and a String
     public LargeInteger add(String li){
