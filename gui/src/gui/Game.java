@@ -69,7 +69,7 @@ public class Game extends Frame {
 		add(cScore);
 		
 	
-		setTitle("RockPaperScissorsLizardSpock!!");
+	setTitle("RockPaperScissorsLizardSpock!!");
         setSize(400, 600);
         setVisible(true);
 		
@@ -98,7 +98,7 @@ public class Game extends Frame {
             }
         });
 				
-		play.addActionListener(new ActionListener() {
+	play.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
             	String winner = "", rand = rand();
